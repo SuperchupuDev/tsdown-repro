@@ -1,5 +1,4 @@
 # tsdown node protocol repro
 
-- target is node12
-- `src/index.ts` imports `node:path`
-- the `dist` javascript files keep the `node:` prefix, making it not work on node 12
+- `src/matcher.ts` imports `picomatch`
+- `dist/index.d.ts` wrongly preserves `import 'picomatch';`
